@@ -54,7 +54,7 @@ class LiteralString implements IntlMessage {
   @override
   String format(Map<String, dynamic> args, {ErrorHandler? onError}) =>
       string.replaceAllMapped(
-          RegExp("'(.)", dotAll: true), (match) => match.group(1)!);
+          RegExp('(.)', dotAll: true), (match) => match.group(1)!);
 
   @override
   String toString() => string;
